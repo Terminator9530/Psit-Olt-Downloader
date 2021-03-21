@@ -70,7 +70,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 (async () => {
   const browser = await puppeteer.launch({
-      headless:false
+      headless:true
   });
   const page = await browser.newPage();
   page.setDefaultNavigationTimeout(0); 
